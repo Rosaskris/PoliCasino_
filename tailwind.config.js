@@ -12,12 +12,13 @@ export default {
     },
     colors: {
       primary: {
-        400: '#cbbde5',
-        500: '#5C546B',
-        600: '#CDBCEB',
+        400: '#B49B36',
+        500: '#9ead9f',
+        600: '#1A271C',
+        300: '#05933d',//polilogo
       },
       grayscale: {
-        50: '#ffffff',
+        50: '#f2eded',
         100: '#efefef',
         200: '#FDFDFF',
         950: '#16161b',

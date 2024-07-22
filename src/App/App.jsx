@@ -17,6 +17,9 @@ import Contact from "../Pages/Contact";
 function App() {
   return (
     <>
+        <a href="http://wa.link/rzbwq0" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+      <img src="/src/assets/logo/whatsapplogo3.png" alt="WhatsApp" />
+    </a>  
       <NavBar />
       <Hero />
       <About />

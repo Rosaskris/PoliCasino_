@@ -26,7 +26,7 @@ const HeroScroller = () => {
               repeat: Infinity,
               repeatType: "loop",
             }}
-            className="w-3 h-3 rounded-full bg-primary-400 mb-1"
+            className="w-3 h-3 rounded-full bg-primary-400 mb-1 mt-1"
           />
         </div>
       </a>

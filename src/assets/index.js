@@ -7,8 +7,10 @@
    Last modification: 03/06/2023
 */
 
+
+
 // Logo
-import bl33hIcon from './logo/bl33hIcon.png';
+import bl33hIcon from './logo/logopoli.png';
 
 // Technologies
 import htmlIcon from './tech/html.png';
@@ -29,14 +31,111 @@ import neoIcon from './tech/neo.png';
 import raspIcon from './tech/raspi.png';
 import close from './close.svg';
 import menu from './menu.svg';
+import calendar from './tech/clases.png'
 
 // Projects
-import pawsitivePrototype from './projects/pawsitive.jpeg';
-import calculator from './projects/calculator.jpg';
-import memoryGame from './projects/memory.jpg';
-
+import pawsitivePrototype from './projects/clausura 2023.jpg';
+import calculator from './projects/cluasura2022.jpg';
+import memoryGame from './projects/hojarasca.jpg';
+import ladys2 from './projects/ladys 2.jpg';
+import bachata from './projects/bachata.jpg';
+import casinoalparque from './projects/casinoalparque.jpg'
+import baile1 from './projects/baile1.jpg'
+import baile2m from './projects/baile2m.jpg'
+import baile3g from './projects/baile3g.jpg'
+import baile4g from './projects/baile4g.jpg'
+import baile5g from './projects/baile5g.jpg'
+import baile6m from './projects/baile6m.jpg'
+import baile7m from './projects/baile7m.jpg'
+import baile8m from './projects/baile8m.jpg'
 // Avatar
-import avatar from './avatar/avatar.png';
+import avatar from './avatar/avatar2.jpg';
+
+
+
+const mediaItems = [
+  {
+    src: pawsitivePrototype,
+    caption: 'Image 1',
+    isVideo: false,
+    size: 'large', // Large item spanning more space
+  },
+  {
+    src: bachata,
+    caption: 'Image 2',
+    isVideo: false,
+    size: 'medium', // Medium item spanning less space
+  },
+  {
+    src: ladys2,
+    caption: 'Image 3',
+    isVideo: false,
+    size: 'medium', // Small item
+  },
+  {
+    src:casinoalparque ,
+    caption: 'Image 1',
+    isVideo: false,
+    size: 'medium', // Large item spanning more space
+  },
+  {
+    src: calculator,
+    caption: 'Image 3',
+    isVideo: false,
+    size: 'large', // Small item
+  },
+  {
+    src:baile3g ,
+    caption: 'Image 1',
+    isVideo: false,
+    size: 'medium', // Large item spanning more space
+  },
+  {
+    src: baile2m,
+    caption: 'Image 2',
+    isVideo: false,
+    size: 'medium', // Medium item spanning less space
+  },
+  {
+    src: baile6m,
+    caption: 'Image 3',
+    isVideo: false,
+    size: 'medium', // Small item
+  },
+  {
+    src:baile4g ,
+    caption: 'Image 1',
+    isVideo: false,
+    size: 'large', // Large item spanning more space
+  },
+  {
+    src: baile7m,
+    caption: 'Image 2',
+    isVideo: false,
+    size: 'medium', // Medium item spanning less space
+  },
+  {
+    src: baile8m,
+    caption: 'Image 2',
+    isVideo: false,
+    size: 'medium', // Medium item spanning less space
+  },
+  {
+    src:baile1,
+    caption: 'Image 1',
+    isVideo: false,
+    size: 'large', // Large item spanning more space
+  },
+  {
+    src: baile5g,
+    caption: 'Image 2',
+    isVideo: false,
+    size: 'large', // Medium item spanning less space
+  }
+];
+
+
+
 
 export {
   menu,
@@ -62,4 +161,11 @@ export {
   memoryGame,
   avatar,
   bl33hIcon,
+  ladys2,
+  bachata,
+  casinoalparque,
+  calendar,
+  mediaItems
 };
+
+// export { mediaItems };

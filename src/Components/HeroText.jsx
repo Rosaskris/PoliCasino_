@@ -8,13 +8,15 @@
 */
 
 import { m, LazyMotion, domAnimation } from "framer-motion";
+import logo from "../assets/policasino.png";
 
 const HeroText = () => {
-  const name = "bl33h ?";
+  const name = "";
 
   return (
     <div
-      className="noselect w-fit h-fit text-grayscale-50 absolute z-10 flex flex-col justify-center items-center rounded-[50%]"
+      className="noselect w-fit h-fit text-primary-400
+      0 absolute z-10 flex flex-col justify-center items-center rounded-[50%]"
       id="repulse-div"
     >
       <LazyMotion features={domAnimation} strict>
@@ -23,35 +25,27 @@ const HeroText = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, type: "spring" }}
           className="text-center flex justify-center items-center flex-col opacity-100 text-7xl sm:text-9xl cursor-default"
-          style={{ fontFamily: "SuperMario" }}
+          style={{ fontFamily: "Merienda", fontStyle: "italic", fontWeight: "200"}}
         >
+        <img src={logo} alt="logo" style={{width:'2em', marginTop:'-1em'}} />
           <m.span
             initial={{ x: -100 }}
             whileInView={{ x: 0 }}
             transition={{ duration: 0.6, type: "spring" }}
+  
+            style={{fontSize:'0.3em'}}
           >
-            Who's{" "}
+            "Al ritmo del alma"
           </m.span>
-          <m.div
-            initial={{ x: 100 }}
+          <m.span
+            initial={{ x: -100 }}
             whileInView={{ x: 0 }}
             transition={{ duration: 0.6, type: "spring" }}
+            style={{fontSize:'0.15em'}}
           >
-            {name.split("").map((char, index) => {
-              if (char === " ") {
-                return " ";
-              }
-              return (
-                <span
-                  key={index}
-                  className="text-primary-400 bounce"
-                  style={{ fontSize: "1.2em" }}
-                >
-                  {char}
-                </span>
-              );
-            })}
-          </m.div>
+            Desde 2018
+          </m.span>
+
         </m.h1>
       </LazyMotion>
     </div>

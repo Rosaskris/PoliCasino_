@@ -48,7 +48,7 @@ const ImageSlider = ({ images }) => {
           duration: 0.5,
           type: "spring",
           stiffness: 100,
-          damping: 20,
+          damping: 15,
         }}
         className="w-full h-full blob drop-shadow-div"
         style={{ backgroundImage: `url(${images[index]})` }}

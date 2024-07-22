@@ -27,7 +27,7 @@
 
 body {
   background: url("https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png");
-  background-color: #5C546B;
+  background-color: #193126;
   position: relative;
   overflow-x: hidden;
   -webkit-overflow-x: hidden;
@@ -42,7 +42,7 @@ body {
   content: " ";
   width: 10px;
   height: 10px;
-  background: #292D44;
+  background: #11e145;
   position: absolute;
   bottom: -10px;
   right: 0;
@@ -52,13 +52,13 @@ body {
 #repulse-div {
   -webkit-appearance: none;
   appearance: none;
-  -webkit-filter: drop-shadow(0 0 5rem #292D44);
-  filter: drop-shadow(0 0 5rem #292D44);
+  -webkit-filter: drop-shadow(0 0 5rem #2a2b2c);
+  filter: drop-shadow(0 0 5rem #5e5f65);
 }
 
 #repulse-div > h1 {
-  -webkit-filter: drop-shadow(0 0 5rem #292D44);
-  filter: drop-shadow(0 0 5rem #292D44);
+  -webkit-filter: drop-shadow(0 0 5rem #9d9ea4);
+  filter: drop-shadow(0 0 5rem #0e2014);
 }
 
 #journey-scroll::-webkit-scrollbar {
@@ -70,10 +70,74 @@ body {
   scrollbar-width: none;
 }
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust as needed */
+  grid-gap: 1px; /* No gaps between items */
+  width: 100%;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* Example of how to make certain items span multiple columns and rows */
+.item-large {
+  grid-column: span 2; /* Spans 2 columns */
+  grid-row: span 2; /* Spans 2 rows */
+}
+
+.item-medium {
+  grid-column: span 1; /* Spans 1 column */
+  grid-row: span 2; /* Spans 2 rows */
+}
+
+.item-small {
+  grid-column: span 1; /* Spans 1 column */
+  grid-row: span 1; /* Spans 1 row */
+}
+
+.gallery-item img, .gallery-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images cover the entire grid cell */
+}
+
+/* WhatsApp button styles */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  right: 20px; /* Distance from the right of the viewport */
+  width: 60px; /* Button width */
+  height: 60px; /* Button height */
+  background-color: #d3d4d3; /* WhatsApp green */
+  border-radius: 50%; /* Circular button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(190, 180, 180, 0.2);
+  z-index: 1000; /* Ensure the button is on top of other elements */
+  transition: background-color 0.3s;
+}
+
+.whatsapp-button img {
+  width: 30px; /* Icon size */
+  height: 30px; /* Icon size */
+}
+
+.whatsapp-button:hover {
+  background-color: #2f8c12; /* Darker green on hover */
+}
+
+
+
 .arrowpath,
 polyline {
   fill: none;
-  stroke: #515152;
+  stroke: #000000;
   vector-effect: non-scaling-stroke;
   stroke-width: 2;
 }
@@ -93,7 +157,7 @@ polyline {
 
 .blob {
   animation: morph 3.6s linear infinite;
-  background: #292D44;
+  background: #c1cebc;
   border-collapse: separate;
   background-size: cover;
   background-position: center;
@@ -126,7 +190,7 @@ polyline {
 .bounce:hover {
   display: inline-block;
   animation: rubberband 0.8s ease-out;
-  color: #cbbde5;
+  color: #fafafa;
 }
 
 @keyframes rubberband {
@@ -157,15 +221,15 @@ polyline {
   .drop-shadow-div {
     -webkit-appearance: none;
     appearance: none;
-    -webkit-filter: drop-shadow(0 0 1.5rem #cbbde5);
-    filter: drop-shadow(0 0 1.5rem #cbbde5);
+    -webkit-filter: drop-shadow(0 0 1.5rem #050406);
+    filter: drop-shadow(0 0 1.5rem #09090a);
   }
 }
 
 .loader {
   width: 100px;
   height: 100px;
-  border: 5px solid #ecfdf4;
+  border: 5px solid #05933d;
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -181,7 +245,7 @@ polyline {
   height: 80px;
   border-radius: 50%;
   border: 5px solid;
-  border-color: #cbbde5 transparent;
+  border-color: #e7e7e8 transparent;
 }
 
 @keyframes rotation {

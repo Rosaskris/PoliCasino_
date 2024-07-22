@@ -6,24 +6,19 @@
    Creation: 02/06/2023
    Last modification: 03/06/2023
 */
-
+import React from 'react';
 import SectionTitle from "../Components/SectionTitle";
-import ProjectCards from "../Components/ProjectCards";
+import GalleryGrid from "../Components/GalleryGrid";
+import { mediaItems } from "../assets";
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full overflow-hidden-web flex justify-center">
-      <div className="w-full min-h-[800px] h-screen xl:w-[70%] relative mt-40 flex flex-col items-center justify-center pb-36">
-        <div className="w-full h-[180%] mt-[-10%] mb-[-10%]">
-          <SectionTitle title="PROJECTS" subtitle="What I have done so far" />
+    <div id="eventos" className="w-full flex justify-center ">
+      <div className="w-full xl:w-[70%] flex flex-col pb-20 mt-20">
+        <div className="w-full">
+          <SectionTitle title="EVENTOS" subtitle="Nuestras participaciones" />
         </div>
-        <div className="w-full h-[70%] z-10 flex justify-center">
-          <div className="w-full xl:w-[70%] h-[-10%">
-            <ProjectCards />
-          </div>
-          <div className="absolute w-full h-full top-[100%] right-[-75%] sm:right-[-50%]">
-          </div>
-        </div>
+        <GalleryGrid mediaItems={mediaItems} />
       </div>
     </div>
   );

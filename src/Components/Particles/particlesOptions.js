@@ -5,7 +5,11 @@
    Version: I
    Creation: 02/06/2023
    Last modification: 02/06/2023
+
 */
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faFile, faPassport, faHeart, faMusic } from '@fortawesome/free-solid-svg-icons';
 
 export const heroOptions = {
   autoPlay: true,
@@ -164,34 +168,20 @@ export const heroOptions = {
     shape: {
       type: 'character',
       character: [
-        {
-          fill: true,
-          font: 'Font Awesome 6 Brands',
-          style: '',
-          value: ['\uf13b'],
-          weight: '400',
-        },
-        {
-          fill: true,
-          font: 'Font Awesome 6 Brands',
-          style: '',
-          value: ['\uf38b'],
-          weight: '400',
-        },
-        {
-          fill: true,
-          font: 'Font Awesome 6 Brands',
-          style: '',
-          value: ['\uf3b9'],
-          weight: '400',
-        },
-        {
-          fill: true,
-          font: 'Font Awesome 6 Brands',
-          style: '',
-          value: ['\uf41b'],
-          weight: '400',
-        },
+        // {
+        //   fill: true,
+        //   font: 'Font Awesome 6 Brands',
+        //   style: '',
+        //   value: ['\uf3b5'],  
+        //   weight: '400',
+        // },
+        // {
+        //   fill: true,
+        //   font: 'Font Awesome 6 Brands',
+        //   style: '',
+        //   value: ['\uf184'],
+        //   weight: '400',
+        // },
       ],
     },
 

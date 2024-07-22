@@ -18,10 +18,10 @@ const Hero = () => {
     <LazyMotion features={domAnimation} strict>
       <m.div
         id="hero"
-        className="relative w-full flex justify-center items-center h-screen min-h-[800px]"
+        className="relative w-full flex justify-center items-center h-screen min-h-[700px]"
       >
         <HeroText />
-        <HeroParticles />
+        {/* <HeroParticles /> */}
       </m.div>
       <HeroScroller />
     </LazyMotion>

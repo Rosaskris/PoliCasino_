@@ -18,21 +18,20 @@ const SectionTitle = (props) => {
         initial={{ x: -350 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 0.6, type: "spring" }}
-        className="text-primary-600 p-6 noselect"
+        className="text-grayscale-50 p-6 noselect"
       >
         <span
           className="opacity-50"
           style={{
-            textTransform: "uppercase",
-            fontFamily: "Poppins, sans-serif",
+            fontFamily: "Open Sans",
             fontWeight: "600",
           }}
         >
           {subtitle}
         </span>
         <h2
-          className="tracking-wider text-7xl sm:text-8xl md:text-9xl"
-          style={{ fontFamily: "Morganite Black"}}
+          className="text-primary-300 tracking-wider text-5xl sm:text-6xl md:text-7xl"
+          style={{ fontFamily: "Merienda", textTransform: "Uppercase"}}
         >
           {title.split("").map((char, index) => {
             if(char === " ") {

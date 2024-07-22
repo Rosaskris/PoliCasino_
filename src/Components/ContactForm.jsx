@@ -52,7 +52,7 @@ const ContactForm = () => {
           style={{ fontFamily: "Morganite Bold, sans-serif" }}
           className="message text-7xl bg-primary-600 p-2 rounded-xl text-grayscale-200 text-center rounded-br-[0%] relative shadow-2xl"
         >
-          <Typewriter words={["Let's get in touch!"]} loop={true} />
+          <Typewriter words={["Cuentanos tus dudas o comentarios!"]} loop={true} />
           &nbsp;
         </h2>
       </div>
@@ -67,10 +67,10 @@ const ContactForm = () => {
           className="w-[80%] h-full flex flex-col gap-4 pt-4 text-grayscale-200"
         >
           <div className="w-full flex flex-col">
-            <label htmlFor="firstname">First Name</label>
+            <label htmlFor="firstname">Nombre</label>
             <input
               className="p-[0.5em] rounded-xl text-grayscale-950"
-              placeholder="Enter your First Name"
+              placeholder="Ingresa tu primer nombre"
               id="firstname"
               type="text"
               name="from_name"
@@ -78,10 +78,10 @@ const ContactForm = () => {
             />
           </div>
           <div className="w-full flex flex-col">
-            <label htmlFor="lastname">Last Name</label>
+            <label htmlFor="lastname">Apellido</label>
             <input
               className="p-[0.5em] rounded-xl text-grayscale-950"
-              placeholder="Enter your Last Name"
+              placeholder="Ingresa tu apellido"
               id="lastname"
               type="text"
               name="from_last"
@@ -92,7 +92,7 @@ const ContactForm = () => {
             <label htmlFor="email">E-mail</label>
             <input
               className="p-[0.5em] rounded-xl text-grayscale-950"
-              placeholder="Enter your E-mail"
+              placeholder="Ingresa tu correo"
               id="email"
               type="email"
               name="from_email"
@@ -100,10 +100,10 @@ const ContactForm = () => {
             />
           </div>
           <div className="w-full flex flex-col">
-            <label>Message</label>
+            <label>Mensaje</label>
             <textarea
               className="p-[0.5em] rounded-xl text-grayscale-950"
-              placeholder="Enter your message..."
+              placeholder="Tu mensaje aquí..."
               name="message"
               required
             ></textarea>

@@ -43,6 +43,9 @@ import {
   calculator,
   memoryGame,
   avatar,
+  ladys2,
+  bachata,
+  casinoalparque
 } from '../assets';
 
 library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
@@ -81,55 +84,57 @@ const icons = {
 
 const introduction = {
   text: [
-    "Hello there, I'm so happy you are here! (:",
+    "Bienvenidos a nuestra Academia de Baile, un lugar donde la pasión por la danza cobra vida. Nos especializamos en enseñar salsa casino, salsa caleña, bachata, porro y otros vibrantes ritmos latinos, comenzando desde cero.",
 
-		"My name is Sara, I'm 21 and a junior computer science student based in Guatemala. I have a strong passion for the technologies related to the data base construction and UX.",
-    "Outside of my regular activities, I'm into drawing whenever I have some free time. I'm also a huge dog lover and enjoy playing chess for fun.",
+    "En nuestra academia, creemos que el baile es más que movimiento; es una forma de expresión que conecta cuerpo y alma. Nuestro eslogan, 'al ritmo del alma', refleja nuestra misión de hacer que cada clase sea una experiencia transformadora, llena de energía, alegría y crecimiento personal.",
 
-    "I'm continuously thrilled to partner with individuals and teams who wholeheartedly embrace my fervor for crafting extraordinary experiences. Your visit to my portfolio is deeply appreciated !",
-  ],
+    "Únete a nosotros y descubre el placer de bailar!"
+  ]
 };
 
 export const navLinks = [
   {
-    id: 'about',
-    title: 'About',
+    id: 'nosotros',
+    title: 'Nosotros',
   },
   {
-    id: 'projects',
-    title: 'Projects',
+    id: 'eventos',
+    title: 'Eventos',
   },
   {
-    id: 'skills',
-    title: 'Skills',
+    id: 'clases',
+    title: 'Clases',
   },
   {
     id: 'contact',
-    title: 'Contact',
+    title: 'Contactanos',
   },
 ];
 
 const projects = [
   {
-    name: "Arasartara's Gallery",
-    description: 'A memory game with an art theme implemented with React. Test your memory skills and enjoy beautiful artwork as you match pairs of cards in this engaging game.',
-    image: memoryGame,
-    source_code_link: 'https://github.com/bl33h/artMemoryGame',
-    demo_link: 'https://arasarmemory.netlify.app/',
+    name: "Inauguración la Hojarasca",
+    // description: 'El pasado 12 de julio de 2024, nuestra academia de baile tuvo el honor de participar en la re-inauguración de la Hostería La Hojarasca en San Jerónimo. Fue una noche mágica en la que nuestros talentosos bailarines deslumbraron al público con cuatro espectaculares presentaciones.',
+    image:memoryGame,
+    image2:ladys2,
+    image3:bachata,
   },
   {
-    name: 'Pawsitive',
-    description: 'Explore a user-friendly Figma prototype for an adoption and sterilization awareness website. Experience the sleek design and contribute to a noble cause.',
+    name: 'Clausura 2023',
+    // description: 'El 13 de diciembre de 2023, el Teatro Clown fue el escenario de nuestra 4ta Clausura Anual. Durante este evento, disfrutamos de una maravillosa variedad de presentaciones que destacaron el talento y la dedicación de nuestros alumnos de todos los niveles. Fue una noche llena de energía, ritmo y alegría, donde cada actuación reflejó el esfuerzo y el amor por la danza que compartimos en nuestra academia. Agradecemos a todos los que formaron parte de esta celebración inolvidable.',
     image: pawsitivePrototype,
-    source_code_link: 'https://github.com/bl33h/pawsitive',
-    demo_link: 'https://www.figma.com/proto/zhK8DMa7uPyQIcHxkemIcx/Pawsitive?type=design&node-id=40-2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=40%3A2',
+    
   },
   {
-    name: 'Basic Calculator',
-    description: 'A completely functional basic calculator website created with React. It allows you to perform mathematical calculations effortlessly. With testing implemented, the results are accurate.',
+    name: 'Casino al parque 2023',
+    // description: "En 2023, nuestra academia tuvo el honor de participar en 'Casino al Parque' en Medellín, un evento vibrante que celebra la cultura y la música latina. Agradecemos a todos los asistentes que disfrutaron con nosotros y a los organizadores por crear un espacio tan especial para compartir el amor por el baile. ¡Fue una experiencia inolvidable!",
+    image: casinoalparque,
+    
+  },
+  {
+    name: 'Clausura 2022',
+    // description: 'El 15 de diciembre de 2022, el Teatro Porfirio Barba Jacob fue el escenario de nuestra 3ra Clausura Anual. En esta mágica noche, disfrutamos de una diversidad de presentaciones que mostraron el talento y la dedicación de nuestros alumnos de todos los niveles. Cada actuación reflejó el arduo trabajo y la pasión por la danza que cultivamos en nuestra academia. Agradecemos a todos los que hicieron posible esta celebración tan especial, llena de ritmo y alegría',
     image: calculator,
-    source_code_link: 'https://github.com/bl33h/calculator',
-    demo_link: 'https://bl33hscalculator.netlify.app/',
   },
 ];
 
