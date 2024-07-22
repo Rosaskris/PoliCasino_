@@ -113,7 +113,7 @@ body {
   right: 20px; /* Distance from the right of the viewport */
   width: 60px; /* Button width */
   height: 60px; /* Button height */
-  background-color: #d3d4d3; /* WhatsApp green */
+  background-color: transparent; /* WhatsApp green */
   border-radius: 50%; /* Circular button */
   display: flex;
   align-items: center;
